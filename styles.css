@@ -4,12 +4,18 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+    font-size:84px;   /* increase as needed */
 }
 
+h2 {
+    text-align: center;
+    font-size: 32px;   /* increase as needed */
+}
 /* ================= HEADER BANNER ================= */
 .top-header {
     width: 100%;
@@ -214,11 +220,51 @@ h1, h2 {
 }
 .section-title::after {
     content: "";
-    width: 60px;
+    width: 30px;
     height: 3px;
     background-color: #ff8800;
     display: block;
     margin: 8px auto 0;
     border-radius: 2px;
 }
-===========================
+
+/* ===== Speakers Section ===== */
+#speakers {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.speaker-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.speaker-card {
+    width: 260px;
+    text-align: center;
+}
+
+.speaker-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 6px solid #f4f6f8;
+}
+
+.speaker-card h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.speaker-card p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
